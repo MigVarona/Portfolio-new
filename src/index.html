@@ -1,224 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="input.css" />
-    <link rel="stylesheet" href="style.css" />
-    <style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
 
-      .custom-link {
-        text-decoration: underline !important;
-        color: black !important;
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="input.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .custom-link {
+      text-decoration: underline !important;
+      color: black !important;
 
-      }
-      
-    </style>
+    }
+  </style>
 
-    <title>Document</title>
-  </head>
+  <title>Document</title>
+</head>
 
-  <body class="animated zoomIn">
+<body class="">
 
-    
-    <header>
+
+  <header class="mb-10">
+    <h1
+      class="animated rollIn mb-12 text-6xl text-center mt-20 leading-8 font-extrabold tracking-tight text-gray-900 md:text-7xl dark:text-white">
+      Hi I'm Miguel,
+      <span class=" underline underline-offset-3 decoration-8 decoration-gray-400 dark:decoration-gray-400">passionate
+        Front-end Developer</span>
+    </h1>
+
+    <div class="animated zoomIn space-x-3 m-5 mt-9 flex justify-center items-center">
+
+      <button class="px-5 py-2">
+        <a href="https://github.com/MigVarona">Github</a>
+      </button>
+
+      <button class="px-5 py-2">
+        <a href="https://www.linkedin.com/in/miguel-varona-555643284/">Linkedin</a>
+      </button>
+      <button class="px-5 py-2" onclick="descargarPDF()">Resume</button>
+    </div>
+  </header>
+
+
+  <script>
+    function descargarPDF() {
+      var pdfURL = "img/Miguel Varona Cv.pdf";
+
+      var enlaceTemporal = document.createElement("a");
+      enlaceTemporal.href = pdfURL;
+
+      enlaceTemporal.setAttribute("download", "Miguel_Varona_Cv.pdf");
+
+      document.body.appendChild(enlaceTemporal);
+
+      enlaceTemporal.click();
+
+      document.body.removeChild(enlaceTemporal);
+    }
+  </script>
+
+  <div class="animated zoomIn bg-white py-6 sm:py-8 mt-20 lg:py-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
       <h1
-        class="animated rollIn mb-12 text-6xl text-center mt-20 leading-8 font-extrabold tracking-tight text-gray-900 md:text-7xl dark:text-white"
-      >
-        Hi I'm Miguel,
-        <span
-          class=" underline underline-offset-3 decoration-8 decoration-gray-400 dark:decoration-gray-400"
-          >passionate Front-end Developer</span
-        >
+        class=" mb-12 text-4xl text-center mt-20 leading-8 font-extrabold tracking-tight text-gray-900 md:text-7xl dark:text-white">
+        < me>
       </h1>
 
-      <div class="animated zoomIn space-x-3 m-5 mt-9 flex justify-center items-center">
-       
-        <button class="px-5 py-2">
-          <a href="https://github.com/MigVarona">Github</a>
-        </button>
 
-        <button class="px-5 py-2">
-          <a href="https://www.linkedin.com/in/miguel-varona-555643284/"
-            >Linkedin</a
-          >
-        </button>
-        <button class="px-5 py-2" onclick="descargarPDF()">Resume</button>
-      </div>
-    </header>
-
-    <script>
-      function descargarPDF() {
-        var pdfURL = "img/Miguel Varona Cv.pdf";
-
-        var enlaceTemporal = document.createElement("a");
-        enlaceTemporal.href = pdfURL;
-
-        enlaceTemporal.setAttribute("download", "Miguel_Varona_Cv.pdf");
-
-        document.body.appendChild(enlaceTemporal);
-
-        enlaceTemporal.click();
-
-        document.body.removeChild(enlaceTemporal);
-      }
-    </script>
-
-    <div class="bg-white py-6 sm:py-8 mt-20 lg:py-12">
-      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <h2
-          class="mb-4 text-center text-2xl font-bold text-black md:mb-6 lg:text-3xl"
-        >
-          Featured Projects
-        </h2>
-
-        <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-          Explore a collection of my latest and most impactful projects that
-          demonstrate my skills and passion for front-end development. Each
-          project serves as a testament to my dedication to creating seamless
-          user experiences and utilizing cutting-edge technologies. Dive into
-          the details to see how I bring ideas to life.
-        </p>
-      </div>
+      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+        Explore a collection of my latest and most impactful projects that
+        demonstrate my skills and passion for front-end development. Each
+        project serves as a testament to my dedication to creating seamless
+        user experiences and utilizing cutting-edge technologies. Dive into
+        the details to see how I bring ideas to life.
+      </p>
     </div>
+  </div>
 
-    <section>
-      <div class="relative px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-        <div class="relative mx-auto max-w-7xl">
-          <div class="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
-            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-              <div class="flex-shrink-0">
-                <img class="object-cover w-full h-48" src="img/film.png" />
-              </div>
-              <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-                <div class="flex-1">
-                  <a href="#" class="block mt-2">
-                    <p class="text-xl font-semibold text-neutral-600">
-                      Viva Film
-                    </p>
-                    <p class="mt-3 text-base text-gray-500">
-                      Viva Film is a web project that showcases a film community
-                      platform, highlighting film examples, cameras and lenses,
-                      and offering inspiration for film enthusiasts. The project
-                      aims to bring together individuals passionate about film
-                      photography.
-                      <br />
-                      <a
-                        href="https://github.com/MigVarona/vivafilm"
-                        class="custom-link"
-                        >Github repository</a
-                      >
-                    </p>
-                    <div class="flex gap-3 mt-4">
-                      <img
-                        class="w-7"
-                        src="img/free-html-58-225994.png"
-                        alt=""
-                      />
-                      <img
-                        class="w-7"
-                        src="img/brand-bootstrap-icon-2048x1675-6k3so6fn.png"
-                        alt=""
-                      />
-                      <img class="w-7" src="img/logo-css3.svg" alt="" />
-                      <img class="w-7" src="img/unplash.png" alt="" />
-                      <img class="w-7" src="img/js-512.webp" alt="" />
-                    </div>
-                  </a>
-                </div>
+  <section>
+    <div class="relative px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+      <div class="relative mx-auto max-w-7xl">
+        <div class="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
+          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+            <div class="flex-shrink-0">
+              <img class="object-cover w-full h-48" src="img/film.png" />
+            </div>
+            <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+              <div class="flex-1">
+                <a href="#" class="block mt-2">
+                  <p class="text-xl font-semibold text-neutral-600">
+                    Viva Film
+                  </p>
+                  <p class="mt-3 text-base text-gray-500">
+                    Viva Film is a web project that showcases a film community
+                    platform, highlighting film examples, cameras and lenses,
+                    and offering inspiration for film enthusiasts. The project
+                    aims to bring together individuals passionate about film
+                    photography.
+                    <br />
+                    <a href="https://github.com/MigVarona/vivafilm" class="custom-link">Github repository</a>
+                  </p>
+                  <div class="flex gap-3 mt-4">
+                    <img class="w-7" src="img/free-html-58-225994.png" alt="" />
+                    <img class="w-7" src="img/brand-bootstrap-icon-2048x1675-6k3so6fn.png" alt="" />
+                    <img class="w-7" src="img/logo-css3.svg" alt="" />
+                    <img class="w-7" src="img/unplash.png" alt="" />
+                    <img class="w-7" src="img/js-512.webp" alt="" />
+                  </div>
+                </a>
               </div>
             </div>
-            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-              <div class="flex-shrink-0">
-                <img class="object-cover w-full h-48" src="img/game.png" />
+          </div>
+          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+            <div class="flex-shrink-0">
+              <img class="object-cover w-full h-48" src="img/game.png" />
+            </div>
+            <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+              <div class="flex-1">
+                <a href="https://twitter.com/g_perales" class="block mt-2">
+                  <p class="text-xl font-semibold text-neutral-600">
+                    How to use search engine optimization to drive sales
+                  </p>
+                  <p class="mt-3 text-base text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit facilis asperiores porro quaerat doloribus, eveniet
+                    dolore. Adipisci tempora aut inventore optio animi.,
+                    tempore temporibus quo laudantium.
+                  </p>
+                </a>
               </div>
-              <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-                <div class="flex-1">
-                  <a href="https://twitter.com/g_perales" class="block mt-2">
-                    <p class="text-xl font-semibold text-neutral-600">
-                      How to use search engine optimization to drive sales
-                    </p>
-                    <p class="mt-3 text-base text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Velit facilis asperiores porro quaerat doloribus, eveniet
-                      dolore. Adipisci tempora aut inventore optio animi.,
-                      tempore temporibus quo laudantium.
-                    </p>
+              <div class="flex items-center mt-6">
+                <div class="flex-shrink-0">
+                  <a href="https://twitter.com/g_perales">
+                    <span class="sr-only">Gabriel Perales</span>
+                    <img class="w-10 h-10 rounded-full"
+                      src="https://pbs.twimg.com/profile_images/1442898475218194432/61p-BNsg_400x400.jpg" alt="" />
                   </a>
                 </div>
-                <div class="flex items-center mt-6">
-                  <div class="flex-shrink-0">
-                    <a href="https://twitter.com/g_perales">
-                      <span class="sr-only">Gabriel Perales</span>
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://pbs.twimg.com/profile_images/1442898475218194432/61p-BNsg_400x400.jpg"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <div class="ml-3">
-                    <p class="text-sm font-medium text-neutral-600">
-                      <a href="#" class="hover:underline"> Gabriel Perales </a>
-                    </p>
-                    <div class="flex space-x-1 text-sm text-gray-500">
-                      <time datetime="2020-03-10"> Mar 10, 2020 </time>
-                      <span aria-hidden="true"> · </span>
-                      <span> 4 min read </span>
-                    </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium text-neutral-600">
+                    <a href="#" class="hover:underline"> Gabriel Perales </a>
+                  </p>
+                  <div class="flex space-x-1 text-sm text-gray-500">
+                    <time datetime="2020-03-10"> Mar 10, 2020 </time>
+                    <span aria-hidden="true"> · </span>
+                    <span> 4 min read </span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-              <div class="flex-shrink-0">
-                <img class="object-cover w-full h-48" src="img/next.png" />
+          </div>
+          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+            <div class="flex-shrink-0">
+              <img class="object-cover w-full h-48" src="img/next.png" />
+            </div>
+            <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+              <div class="flex-1">
+                <a href="#" class="block mt-2">
+                  <p class="text-xl font-semibold text-neutral-600">
+                    Improve your customer experience
+                  </p>
+                  <p class="mt-3 text-base text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint harum rerum voluptatem quo recusandae magni placeat
+                    saepe molestiae, sed excepturi cumque corporis perferendis
+                    hic.
+                  </p>
+                </a>
               </div>
-              <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-                <div class="flex-1">
-                  <a href="#" class="block mt-2">
-                    <p class="text-xl font-semibold text-neutral-600">
-                      Improve your customer experience
-                    </p>
-                    <p class="mt-3 text-base text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint harum rerum voluptatem quo recusandae magni placeat
-                      saepe molestiae, sed excepturi cumque corporis perferendis
-                      hic.
-                    </p>
+              <div class="flex items-center mt-6">
+                <div class="flex-shrink-0">
+                  <a href="https://twitter.com/wickedlabsHQ">
+                    <span class="sr-only">Wicked Labs</span>
+                    <img class="w-10 h-10 rounded-full"
+                      src="https://d33wubrfki0l68.cloudfront.net/2f76102fd18a4e095eaed7a836a3f2183a982a4d/91dd4/images/avatar.jpg"
+                      alt="" />
                   </a>
                 </div>
-                <div class="flex items-center mt-6">
-                  <div class="flex-shrink-0">
-                    <a href="https://twitter.com/wickedlabsHQ">
-                      <span class="sr-only">Wicked Labs</span>
-                      <img
-                        class="w-10 h-10 rounded-full"
-                        src="https://d33wubrfki0l68.cloudfront.net/2f76102fd18a4e095eaed7a836a3f2183a982a4d/91dd4/images/avatar.jpg"
-                        alt=""
-                      />
+                <div class="ml-3">
+                  <p class="text-sm font-medium text-neutral-600">
+                    <a href="https://twitter.com/wickedlabsHQ" class="hover:underline">
+                      Wicked Labs
                     </a>
-                  </div>
-                  <div class="ml-3">
-                    <p class="text-sm font-medium text-neutral-600">
-                      <a
-                        href="https://twitter.com/wickedlabsHQ"
-                        class="hover:underline"
-                      >
-                        Wicked Labs
-                      </a>
-                    </p>
-                    <div class="flex space-x-1 text-sm text-gray-500">
-                      <time datetime="2020-02-12"> Feb 12, 2020 </time>
-                      <span aria-hidden="true"> · </span>
-                      <span> 11 min read </span>
-                    </div>
+                  </p>
+                  <div class="flex space-x-1 text-sm text-gray-500">
+                    <time datetime="2020-02-12"> Feb 12, 2020 </time>
+                    <span aria-hidden="true"> · </span>
+                    <span> 11 min read </span>
                   </div>
                 </div>
               </div>
@@ -226,8 +197,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+
 </html>
