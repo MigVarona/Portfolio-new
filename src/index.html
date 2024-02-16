@@ -23,25 +23,48 @@
 <body>
 
 
-<header>
-  <h1
-    class="mb-12 text-6xl text-center mt-20 leading-8 font-extrabold  tracking-tight text-gray-900 md:text-7xl  dark:text-white">
-    Hi I'm Miguel, <span
-      class="underline underline-offset-3 decoration-8 decoration-gray-400 dark:decoration-gray-400">passionate
-      Front-end Developer</span></h1>
+  <header>
+    <h1
+      class="mb-12 text-6xl text-center mt-20 leading-8 font-extrabold  tracking-tight text-gray-900 md:text-7xl  dark:text-white">
+      Hi I'm Miguel, <span
+        class="underline underline-offset-3 decoration-8 decoration-gray-400 dark:decoration-gray-400">passionate
+        Front-end Developer</span></h1>
 
-  <div class=" gap-3 flex mt-9 justify-center items-center">
-    <button>
-      Resume
-    </button>
-    <button><a href="https://github.com/MigVarona">Github</a></button>
+    <div class=" gap-3 m-5 flex mt-9 justify-center items-center">
+      <button class="px-4 py-2" onclick="descargarPDF()">Descargar PDF</button>
+      <button class="px-4 py-2"><a href="https://github.com/MigVarona">Github</a></button>
 
-    <button><a href="https://www.linkedin.com/in/miguel-varona-555643284/">Linkedin</a>
-      
-    </button>
-  </div>
-</header>
+      <button class="px-4 py-2"><a href="https://www.linkedin.com/in/miguel-varona-555643284/">Linkedin</a>
 
+      </button>
+    </div>
+  </header>
+
+
+
+
+  <script>
+    function descargarPDF() {
+
+      var pdfURL = 'img/Miguel Varona Cv.pdf';
+
+
+      var enlaceTemporal = document.createElement('a');
+      enlaceTemporal.href = pdfURL;
+
+
+      enlaceTemporal.setAttribute('download', 'Miguel_Varona_Cv.pdf');
+
+
+      document.body.appendChild(enlaceTemporal);
+
+
+      enlaceTemporal.click();
+
+
+      document.body.removeChild(enlaceTemporal);
+    }
+  </script>
 
 
 
@@ -56,7 +79,10 @@
 
       <h2 class="mb-4 text-center text-2xl font-bold text-black md:mb-6 lg:text-3xl">Featured Projects</h2>
 
-      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Explore a collection of my latest and most impactful projects that demonstrate my skills and passion for front-end development. Each project serves as a testament to my dedication to creating seamless user experiences and utilizing cutting-edge technologies. Dive into the details to see how I bring ideas to life.</p>
+      <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Explore a collection of my latest and most
+        impactful projects that demonstrate my skills and passion for front-end development. Each project serves as a
+        testament to my dedication to creating seamless user experiences and utilizing cutting-edge technologies. Dive
+        into the details to see how I bring ideas to life.</p>
     </div>
   </div>
 
@@ -77,9 +103,11 @@
                 <a href="#" class="block mt-2">
                   <p class="text-xl font-semibold text-neutral-600">Viva Film</p>
                   <p class="mt-3 text-base text-gray-500">
-                    Viva Film is a web project that showcases a film community platform, highlighting film examples, cameras and lenses, and offering inspiration for film enthusiasts. The project aims to bring together individuals passionate about film photography.
-                    <br>  <a href="https://github.com/MigVarona/vivafilm" class="custom-link">Github repository</a>
-                  
+                    Viva Film is a web project that showcases a film community platform, highlighting film examples,
+                    cameras and lenses, and offering inspiration for film enthusiasts. The project aims to bring
+                    together individuals passionate about film photography.
+                    <br> <a href="https://github.com/MigVarona/vivafilm" class="custom-link">Github repository</a>
+
                   </p>
                   <div class="flex gap-3 mt-4">
                     <img class="w-7" src="img/free-html-58-225994.png" alt="">
@@ -90,7 +118,7 @@
                   </div>
                 </a>
               </div>
-              
+
             </div>
           </div>
           <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
