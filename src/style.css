@@ -118,4 +118,7 @@ button {
     transition: opacity 1s ease-in-out;
   }
   
-  
+  h1 {
+    font-family: Merriweather, serif;
+  }
+
