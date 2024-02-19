@@ -40,7 +40,9 @@
       <button class="px-5 py-2">
         <a href="https://www.linkedin.com/in/miguel-varona-555643284/">Linkedin</a>
       </button>
-      <button class="px-5 py-2"><a href="https://drive.google.com/file/d/1RF_St-IDMlN9331q9z8bCnPjVkeRT-oI/view?usp=sharing" target="_blank">Resume</a></button>
+      <button class="px-5 py-2"><a
+          href="https://drive.google.com/file/d/1RF_St-IDMlN9331q9z8bCnPjVkeRT-oI/view?usp=sharing"
+          target="_blank">Resume</a></button>
     </div>
   </header>
 
@@ -194,28 +196,28 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 
   <script>
-    window.onload = function() {
-  const images = document.querySelectorAll(".fade-in");
+    window.onload = function () {
+      const images = document.querySelectorAll(".fade-in");
 
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5
-  };
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5
+      };
 
-  const observer = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = 1;
-        observer.unobserve(entry.target);
-      }
-    });
-  }, options);
+      const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
 
-  images.forEach(image => {
-    observer.observe(image);
-  });
-};
+      images.forEach(image => {
+        observer.observe(image);
+      });
+    };
 
 
   </script>
