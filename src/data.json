@@ -19,5 +19,19 @@
     "description": "Next Play is a minimalism aesthetically pleasing and responsive web music application built using Next.js, Tailwind CSS, Spotify, and the Unsplash API.",
     "githubLink": "https://github.com/MigVarona/nextmusic",
     "tags": ["JavaScript", "NextJs", "Tailwind", "Unplash Api"]
+  },
+  {
+    "title": "Next Play",
+    "image": "img/next.png",
+    "description": "Next Play is a minimalism aesthetically pleasing and responsive web music application built using Next.js, Tailwind CSS, Spotify, and the Unsplash API.",
+    "githubLink": "https://github.com/MigVarona/nextmusic",
+    "tags": ["JavaScript", "NextJs", "Tailwind", "Unplash Api"]
+  },
+  {
+    "title": "Next Play",
+    "image": "img/next.png",
+    "description": "Next Play is a minimalism aesthetically pleasing and responsive web music application built using Next.js, Tailwind CSS, Spotify, and the Unsplash API.",
+    "githubLink": "https://github.com/MigVarona/nextmusic",
+    "tags": ["JavaScript", "NextJs", "Tailwind", "Unplash Api"]
   }
 ]
